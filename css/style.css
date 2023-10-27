@@ -127,92 +127,71 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
-/************************************************
-    BONUS
- ************************************************/
-@media all and (max-width:20000px) {
-    .container {
-        width: 100%;
-    }
-}
 
 /************************************************
     TABLET VERSION
 *************************************************/
 @media all and (max-width:768px) {
     .site-header {
-        width: 100%;
+        text-align: center;
     }
-
     .container {
         width: 100%;
-    }
-
-    .steps .col {
-        width: calc((100% / 3) - 10px);
-        margin: 5px;
+        padding: 0;
     }
 }
-
 /************************************************
     MOBILE VERSION
 *************************************************/
-@media all and (max-width: 480px) {
-    body {
+@media all and (max-width:480px) {
+    body{
         background-color: #222222;
     }
-
-    .site-header {
-        width: 100%;
+    section.lessons.text-center{
         background-color: #232946;
-        margin: 0;
     }
-
+    section.steps{
+        margin-top: 0;
+    }
+    p.text{
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+    }
+    .site-header {
+        background-color: #232946;
+        margin:0;
+    }
     .site-header h1 {
         padding: 3rem 0 3rem 0;
         margin: 0;
     }
-
-    .row {
+    .container h2{
+        margin-top: 0;
+    }
+    .row{
         display: block;
     }
-
-    .lessons .col {
-        width: 100%;
+    .lessons .col{
+        width: 90%;
+        margin: 0 auto;
     }
-
-    .steps.text-center {
-        margin: 0;
-
+    .steps .col{
+        width: 90%;
+        margin: 0 auto;
     }
-
-    .lessons.text-center {
-        padding-bottom: 3rem;
-        margin: 0;
-        background-color: #232946;
-        ;
-    }
-
-    .steps.text-center:first-child {
-        background-color: #232946;
-    }
-
-    .steps .col {
-        display: block;
-        width: 100%;
-    }
-
-    .why-us .col-left {
-        width: 100%;
-    }
-
     .why-us {
-        background-color: #222222;
-        padding: 3rem 0 3rem 0;
+        margin: 0;
+        padding-bottom: 3rem;
     }
-
+    .why-us .col-left {
+        width: 90%;
+        margin: 0 auto;
+    }
     .why-us .col-right {
-        margin-top: 5rem;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .why-us li:last-child{
+        margin-bottom: 0;
     }
 }
