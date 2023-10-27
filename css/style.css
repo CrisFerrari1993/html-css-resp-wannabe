@@ -127,7 +127,17 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+@media all and (max-width:2000px){
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .col {
+            padding: 0;
+        }
 
+}
 /************************************************
     TABLET VERSION
 *************************************************/
@@ -138,6 +148,12 @@ img {
     .container {
         width: 100%;
         padding: 0;
+    }
+    .col {
+        padding: 0;
+    }
+    .row{
+        width: 100%;
     }
 }
 /************************************************
@@ -152,6 +168,10 @@ img {
     }
     section.steps{
         margin-top: 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0%;
     }
     p.text{
         margin-bottom: 0;
